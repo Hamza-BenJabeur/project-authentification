@@ -1,0 +1,16 @@
+<div class="container">
+  <form>
+    <div class="form-group">
+      <h1 class="text-center text-primary">Login</h1>
+      <div>
+        <span class="input-group-text">username</span>
+        <input type="text" class="form-control" name="username" #username />
+        <span class="input-group-text">email</span>
+        <input type="text" class="form-control" name="email" #email />
+        <span class="input-group-text">password</span>
+        <input type="text" class="form-control" name="password" #password />
+      </div>
+    </div>
+  </form>
+  <button (click)="collectLog(username, password)">submit</button>
+</div>
